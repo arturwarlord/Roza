@@ -140,6 +140,8 @@ svg {
 .trade {
     margin-top: 50px;
     margin-bottom: 200px;
+    background-color: #fa489a;
+    height: 51px;
 }
 
 .trade__cards {
@@ -153,29 +155,25 @@ svg {
     text-align: center;
 }
 
-.card__tem {
-    width: 300px;
-    background-color: #fa489a;
-}
-
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background: #fa489a;
+    color: whitesmoke;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
+    padding-bottom: 13px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
+    font-size: 20px;
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
     transition: 0.8s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
+.accordion:hover {
+    color: darkgray;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -192,36 +190,17 @@ svg {
 }
 
 .panel a {
-    color: black;
     text-decoration: none;
     font-size: 20px;
     -webkit-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .panel a:hover {
     background-color: grey;
-}
-
-.card__ico {
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.card__ico img {
-    width: 100%;
-    height: auto;
-}
-
-.card__title {
-    font-size: 20px;
-    color: black;
-    font-weight: 600;
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 10px;
 }
 
 /* Vendor libs */

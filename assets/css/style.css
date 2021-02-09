@@ -16,7 +16,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 5px 30px;
 }
 
 .header__logo {
@@ -73,6 +73,9 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    margin-top: -51px;
+    z-index: 0;
+    position: relative;
 }
 
 .intro__title {
@@ -138,10 +141,14 @@ svg {
 }
 
 .trade {
-    margin-top: 50px;
-    margin-bottom: 200px;
-    background-color: #fa489a;
+    background-color: rgba(250, 72, 154, 0.58);
     height: 51px;
+    z-index: 1111;
+    position: relative;
+}
+
+.karta__adress {
+    margin-bottom: 50px;
 }
 
 .trade__cards {
@@ -153,11 +160,72 @@ svg {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     text-align: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.location__map {
+    text-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.vivoz__title {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fa489a;
+    margin-bottom: 100px;
+}
+
+.vivoz__subtitle {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fa489a;
+}
+
+.vivoz {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.gruz {
+    width: 200px;
+    height: auto;
+}
+
+.gruz img {
+    width: 100%;
+    height: auto;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
+/*.accordion {
+    background: rgba(250, 72, 154, 0);
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    padding-bottom: 13px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.8s;
+
+
+        &:hover{
+            color: darken(whitesmoke, 30%);
+        }
+
+}*/
 .accordion {
-    background: #fa489a;
+    background: rgba(250, 72, 154, 0);
     color: whitesmoke;
     cursor: pointer;
     padding: 15px;
@@ -170,6 +238,7 @@ svg {
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
     transition: 0.8s;
+    position: relative;
 }
 
 .accordion:hover {
@@ -179,7 +248,7 @@ svg {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.49);
     display: none;
     overflow: hidden;
     -webkit-box-orient: vertical;
@@ -187,6 +256,8 @@ svg {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: right;
+    position: absolute;
+    z-index: 11111;
 }
 
 .panel a {
@@ -201,6 +272,73 @@ svg {
 
 .panel a:hover {
     background-color: grey;
+}
+
+.tovar {
+    margin-bottom: 100px;
+}
+
+.group__item {
+    width: 18%;
+    height: auto;
+    background: #fa489a;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.group__title {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 5px 15px;
+    color: white;
+}
+
+.tovar__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.group__ico {
+    width: 100%;
+    height: auto;
+}
+
+.group__ico img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background: #fa489a;
+}
+
+.footer__text {
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer__under {
+    text-align: center;
+    font-size: 11px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.footer__ico {
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Vendor libs */

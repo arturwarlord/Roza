@@ -169,7 +169,7 @@ svg {
 }
 
 .into__head {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .trade {
@@ -389,71 +389,18 @@ svg {
     margin-top: 10px;
 }
 
+.product__title {
+    background: #fa489a;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
 /* Vendor libs */
-.slider {
-    min-width: 0;
-}
-
-.slick-track {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.slick-list {
-    overflow: hidden;
-}
-
-.slider .slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.slider .slick-dots li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-.slider .slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 12px;
-    background-color: #fa489a;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-}
-
-.slider .slick-dots li.slick-active button {
-    background-color: #d60666;
-}
-
-.slider__item {
-    text-align: center;
-    width: 50px;
-    height: auto;
-}
-
-.slider__item img {
-    width: 100%;
-    height: auto;
-}
-
-.sliderbig {
-    min-width: 0;
-}
-
-.sliderbig__item {
-    text-align: center;
-}
-
 .secondary-slider__track {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -470,6 +417,12 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 10px;
+    padding: 0 !important;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    will-change: transform;
 }
 
 .splide .splide__slide li {
@@ -482,12 +435,6 @@ svg {
     z-index: 0;
 }
 
-.splide--fade > .splide__track > .splide__list > .splide__slide.is-active {
-    position: relative;
-    z-index: 1;
-    opacity: 1;
-}
-
 .splide__slide {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -495,14 +442,17 @@ svg {
     margin: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .p-splide__slide {
     position: relative;
     color: #fff;
     border-radius: .5rem;
-    border: 3px solid #eef5ae;
-    background: #dceb5d;
+    border: 1px solid #eef5ae;
+    background: rgba(250, 72, 154, 0.65);
     overflow: hidden;
     line-height: 1.5;
     -webkit-transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1), background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
@@ -523,15 +473,6 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-.splide__list {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    will-change: transform;
 }
 
 ol, ul {
@@ -563,36 +504,38 @@ ol, ul {
     border-color: #eef5ae;
 }
 
-.splide__slide {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    list-style-type: none !important;
-    margin: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-}
-
-.splide, .splide__slide {
-    position: relative;
-    outline: none;
-}
-
-.p-splide__slide {
-    position: relative;
-    color: #fff;
-    border-radius: .5rem;
-    border: 3px solid #eef5ae;
-    background: #dceb5d;
-    overflow: hidden;
-    line-height: 1.5;
-    -webkit-transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1), background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
-    -o-transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1), background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
-    transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1), background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
-}
-
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+}
+
+.p-example__splide {
+    padding: 0 20px;
+}
+
+.description__title {
+    padding-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.splide__ico {
+    height: 100%;
+    width: auto;
+    margin-right: 15px;
+}
+
+.splide__ico img {
+    width: auto;
+    height: 100%;
+}
+
+.description__subtitle {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .container-big {

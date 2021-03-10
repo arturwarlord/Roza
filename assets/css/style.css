@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Default styles */
 body {
     margin: 0px;
@@ -316,6 +317,12 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .accordion {
+        font-size: 14px;
+    }
+}
+
 .panel {
     padding: 0 18px;
     background-color: rgba(255, 255, 255, 0.49);
@@ -328,6 +335,9 @@ body {
     text-align: right;
     position: absolute;
     z-index: 555555555;
+    -webkit-transition: .4s linear;
+    -o-transition: .4s linear;
+    transition: .4s linear;
 }
 
 .panel a {
@@ -342,6 +352,27 @@ body {
 
 .panel a:hover {
     background-color: grey;
+}
+
+/* Стилизация выпадающей кнопки */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Контейнер <div> - необходимо разместить выпадающий контент */
+.card__col {
+    position: relative;
+    display: inline-block;
+}
+
+/* Показать выпадающее меню при наведении */
+.card__col:hover .panel {
+    display: block;
 }
 
 .intro {
@@ -397,7 +428,7 @@ body {
 
 @media (max-width: 500px) {
     .intro {
-        height: 50vh;
+        height: 80vh;
     }
 }
 
@@ -407,15 +438,21 @@ body {
     }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 400px) {
     .intro {
-        margin-top: -170px;
+        margin-top: -75px;
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 374px) {
     .intro {
-        margin-top: -220px;
+        margin-top: -70px;
+    }
+}
+
+@media (max-width: 360px) {
+    .intro {
+        margin-top: -110px;
     }
 }
 
@@ -535,6 +572,13 @@ svg {
     color: white;
 }
 
+@media (max-width: 400px) {
+    .group__title {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
 .tovar__group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,6 +592,12 @@ svg {
 @media (max-width: 900px) {
     .tovar__group {
         padding: 0 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .tovar__group {
+        padding: 0 3px;
     }
 }
 

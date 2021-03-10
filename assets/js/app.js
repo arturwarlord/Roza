@@ -5858,27 +5858,34 @@ window.Splide = complete_Splide;
 /******/ })()
 ;
 console.log("modal");
+/*
+$(function qiwi(){
+    $(".accordion").click(function(){
+        $(".panel").slideToggle(1000);
+    });
+});
 
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName(".accordion");
 var i;
 
+acc.addEventListener("click", qiwi, true);
+/*
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
+        $(".panel").slideToggle(1000);
+
+
         var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
+        if (event.click == acc) {
+
             panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+            $(".panel").slideToggle(1000);
         }
     });
 }
-
-
+*/
 $(document).ready(function(){
    $('.slider').slick({
        arrows: false,

@@ -366,27 +366,10 @@ body {
     margin-top: -51px;
     z-index: 0;
     position: relative;
-  /* @media(max-width: 1024px){
-        margin-bottom: 100px;
-    }
-
-
-
-
-
-    @media(max-width: 472px){
-        margin-top: -140px;
-    }
-
-    @media(max-width: 340px){
-        margin-top: -180px;
-    }
-
-    */
 }
 
 .intro--two {
-    margin-bottom: 350px;
+    height: auto;
 }
 
 @media (max-width: 1300px) {
@@ -395,6 +378,7 @@ body {
     }
 
     .intro--two {
+        height: auto;
         margin-bottom: 280px;
     }
 }
@@ -412,6 +396,10 @@ body {
 @media (max-width: 500px) {
     .intro {
         height: 80vh;
+    }
+
+    .intro--two {
+        height: auto;
     }
 }
 
@@ -696,6 +684,78 @@ svg {
     text-decoration: none;
 }
 
+.price__list {
+    background: #fa489a;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.price__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.price__item {
+    color: white;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    .price__item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    .price__item {
+        width: 70%;
+    }
+}
+
+.list__title {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.price__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.price__info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.price__info ul:first-child {
+    width: 48px;
+}
+
+.price__info ul:last-child {
+    width: 53px;
+}
+
+.price__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
 .footer {
     background: #fa489a;
 }
@@ -878,18 +938,6 @@ li {
 .splide__ico img {
     width: auto;
     height: 100%;
-}
-
-@media (max-width: 900px) {
-    .splide__ico img {
-        height: 70%;
-    }
-}
-
-@media (max-width: 550px) {
-    .splide__ico img {
-        height: 80%;
-    }
 }
 
 .description__subtitle {

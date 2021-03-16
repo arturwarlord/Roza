@@ -189,6 +189,20 @@ body {
     }
 }
 
+@media (max-width: 621px) {
+    .trade__cards {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 621px) {
+    .trade__cards {
+        padding: 0;
+    }
+}
+
 .location__map {
     text-align: center;
     -ms-flex-pack: distribute;
@@ -385,11 +399,17 @@ body {
 
 @media (max-width: 856px) {
     .intro {
-        margin-top: -90px;
+        margin-top: -50px;
     }
 
     .intro--two {
         margin-bottom: 180px;
+    }
+}
+
+@media (max-width: 795px) {
+    .intro {
+        margin-top: -90px;
     }
 }
 
@@ -403,9 +423,15 @@ body {
     }
 }
 
-@media (max-width: 472px) {
+@media (max-width: 425px) {
     .intro {
-        margin-top: -135px;
+        margin-top: -90px;
+    }
+}
+
+@media (max-width: 409px) {
+    .intro {
+        margin-top: -90px;
     }
 }
 
@@ -423,7 +449,13 @@ body {
 
 @media (max-width: 360px) {
     .intro {
-        margin-top: -110px;
+        margin-top: -75px;
+    }
+}
+
+@media (max-width: 322px) {
+    .intro {
+        margin-top: -70px;
     }
 }
 

@@ -5858,48 +5858,6 @@ window.Splide = complete_Splide;
 /******/ })()
 ;
 console.log("modal");
-/*
-$(function qiwi(){
-    $(".accordion").click(function(){
-        $(".panel").slideToggle(1000);
-    });
-});
-
-var acc = document.getElementsByClassName(".accordion");
-var i;
-
-acc.addEventListener("click", qiwi, true);
-/*
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-
-        $(".panel").slideToggle(1000);
-
-
-        var panel = this.nextElementSibling;
-        if (event.click == acc) {
-
-            panel.style.display = "none";
-        } else {
-            $(".panel").slideToggle(1000);
-        }
-    });
-}
-*/
-$(document).ready(function(){
-   $('.slider').slick({
-       arrows: false,
-       dots: true,
-       slidesToShow: 4,
-       slidesToScroll: 1,
-       asNavFor:".sliderbig",
-   });
-    $('.sliderbig').slick({
-        arrows: false,
-        fade: true,
-        asNavFor:".slider",
-    });
-});
 
 
 // Create and mount the thumbnails slider.

@@ -227,6 +227,14 @@ body {
     font-family: sans-serif;
     font-weight: 600;
     color: #fa489a;
+    margin-bottom: 10px;
+}
+
+.map__subtitle {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fa489a;
     margin-bottom: 100px;
 }
 
@@ -302,6 +310,27 @@ body {
     .mapico {
         display: none;
     }
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.social__item {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.social__item img {
+    width: 100%;
+    height: 30px;
 }
 
 .accordion {
